@@ -1,12 +1,13 @@
 package com.github.codeqingkong.model;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * @author qingkong
  * @date 2021/12/6
  */
-public class User {
+public class User implements Serializable {
     private Integer id;
     private String username;
     private String password;
