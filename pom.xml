@@ -13,14 +13,17 @@
         <maven.compiler.target>8</maven.compiler.target>
         <hutool.version>5.7.15</hutool.version>
         <spring.version>5.3.12</spring.version>
+        <shiro.version>1.8.0</shiro.version>
     </properties>
 
     <dependencies>
+        <!--  引入 hutool -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool.version}</version>
         </dependency>
+        <!--  引入 spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
@@ -61,11 +64,17 @@
             <artifactId>spring-tx</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--  引入 mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.7</version>
-            <scope>compile</scope>
+        </dependency>
+        <!--  引入 shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
         </dependency>
     </dependencies>
 </project>
