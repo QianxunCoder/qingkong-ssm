@@ -10,9 +10,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix='fmt' %>
 <html>
 <head>
-    <script src="../../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../../js/bootstrap.min.js"></script>
-    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/js/jquery-3.6.0.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+    <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <script>
         <%--通用的方法--%>
         function checkEmpty(id,name){

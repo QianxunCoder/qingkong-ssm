@@ -14,6 +14,26 @@
 <body>
 账户名：<input type="text" id="username"/>
 密码：<input type="password" id="password"/>
-<input type="submit" value="登录">
+<input type="submit" id="login_submit" value="登录">
+<script>
+    $(function (){
+        $("#login_submit").click(function () {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            $.ajax({
+                url:  "${pageContext.request.contextPath}/login",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    "username": username,
+                    "password": password
+                }),
+                success: function (result) {
+
+                }
+            })
+        })
+    })
+</script>
 </body>
 </html>

@@ -7,6 +7,6 @@ import org.springframework.stereotype.Controller;
  * @date 2021/12/19
  */
 @Controller
-public class HomeController {
+public class UserController {
 
 }
