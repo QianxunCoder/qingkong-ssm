@@ -11,7 +11,7 @@
         <result column="create_time" property="createdTime"/>
         <result column="modified_time" property="modifiedTime"/>
     </resultMap>
-    <insert id="insertUser">
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
 
     </insert>
     <update id="deleteUser">
