@@ -7,4 +7,9 @@ import com.github.codeqingkong.model.User;
  * @date 2021/12/19
  */
 public class UserDTO extends User {
+
+    @Override
+    public String toString() {
+        return "UserDTO{}";
+    }
 }

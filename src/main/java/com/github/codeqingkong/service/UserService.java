@@ -35,4 +35,11 @@ public interface UserService {
      */
     boolean getOneUser(Integer userId);
 
+    /**
+     * 根据 username 获取 user
+     * @param username
+     * @return
+     */
+    User getOneUserByUsername(String username);
+
 }
