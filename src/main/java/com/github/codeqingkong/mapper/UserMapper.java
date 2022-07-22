@@ -11,4 +11,6 @@ public interface UserMapper {
     int deleteUser(Integer userId);
     int updateUser(User user);
     User getOneUserById(Integer userId);
+
+    User getOneUserByUsername(String username);
 }

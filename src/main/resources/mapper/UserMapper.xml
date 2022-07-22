@@ -11,7 +11,7 @@
         <result column="create_time" property="createdTime"/>
         <result column="modified_time" property="modifiedTime"/>
     </resultMap>
-    <insert id="insertUser">
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
 
     </insert>
     <update id="deleteUser">
@@ -22,5 +22,9 @@
     </update>
     <select id="getOneUserById" resultMap="resultUser" useCache="false">
 
+    </select>
+
+    <select id="getOneUserByUsername" resultMap="resultUser" useCache="false">
+        SELECT * FROM user WHERE username = #{username} AND is_deleted = 0
     </select>
 </mapper>

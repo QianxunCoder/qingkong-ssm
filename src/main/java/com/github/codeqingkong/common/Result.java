@@ -31,19 +31,16 @@ public class Result extends LinkedHashMap<String, Object> implements Serializabl
         return this.get("data");
     }
 
-    public Result setCode(int code) {
+    public void setCode(int code) {
         this.put("code", code);
-        return this;
     }
 
-    public Result setMsg(String msg) {
+    public void setMsg(String msg) {
         this.put("msg", msg);
-        return this;
     }
 
-    public Result setData(Object data) {
+    public void setData(Object data) {
         this.put("data", data);
-        return this;
     }
 
     public static Result ok() {
