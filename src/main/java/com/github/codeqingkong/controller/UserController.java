@@ -18,4 +18,10 @@ public class UserController {
         modelAndView.setViewName("user/index");
         return modelAndView;
     }
+
+    @GetMapping("/list")
+    public ModelAndView list(ModelAndView modelAndView){
+        modelAndView.setViewName("user/list");
+        return modelAndView;
+    }
 }
