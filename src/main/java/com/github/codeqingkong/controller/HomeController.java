@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
     @GetMapping("/index")
     public ModelAndView index(ModelAndView modelAndView){
-        modelAndView.setViewName("");
+        modelAndView.setViewName("/home/index");
         return modelAndView;
     }
 }
