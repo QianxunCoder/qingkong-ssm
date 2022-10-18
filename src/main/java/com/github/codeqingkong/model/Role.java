@@ -61,4 +61,16 @@ public class Role {
     public void setHasDeleted(Integer hasDeleted) {
         this.hasDeleted = hasDeleted;
     }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", createdTime=" + createdTime +
+                ", modifiedTime=" + modifiedTime +
+                ", hasDeleted=" + hasDeleted +
+                '}';
+    }
 }

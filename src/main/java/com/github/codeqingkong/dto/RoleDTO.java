@@ -1,13 +1,12 @@
 package com.github.codeqingkong.dto;
 
-import com.github.codeqingkong.model.User;
+import com.github.codeqingkong.model.Role;
 
 /**
  * @author qingkong
- * @date 2021/12/19
+ * @date 2022/10/18
  */
-public class UserDTO extends User {
-
+public class RoleDTO extends Role {
     @Override
     public String toString() {
         return super.toString();
